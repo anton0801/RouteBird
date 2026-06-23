@@ -1,16 +1,16 @@
 workflows:
   sample-workflow:
-    name: Round Bird workflow
+    name: Route Bird workflow
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: round_bird
+      app_store_connect: route_bird
     environment:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.birdsroand.BirdRoand
       vars:
-        APP_STORE_CONNECT_KEY: round_bird
+        APP_STORE_CONNECT_KEY: route_bird
         APP_STORE_APPLE_ID: 6783389327
         BUNDLE_ID: "com.birdsroand.BirdRoand"
         XCODE_PROJECT: "BirdRoand.xcodeproj"
